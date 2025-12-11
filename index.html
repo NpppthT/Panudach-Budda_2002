@@ -1,28 +1,19 @@
 <!doctype html>
 <html lang="th">
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Panudach Budda_Night</title>
-</head>
-<body>
-<h1 style="font-family: 'TH Sarabun New', sans-serif;
-           font-size: 32px;
-           color: red;
-           text-align: center;
-           margin-top: 40px;
-           text-decoration: underline;
-           text-decoration-color: red;">
-  Diary Work Report
-</h1>
-<!doctype html>
-<html lang="th">
-<head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Panudach Budda_Night</title>
 
   <style>
-    .header-title {
+    body {
+      margin: 0;
+      padding: 0;
       font-family: 'TH Sarabun New', sans-serif;
+    }
+
+    /* หัวข้อใหญ่ */
+    .header-title {
       font-size: 32px;
       color: red;
       text-align: center;
@@ -31,12 +22,12 @@
       text-decoration-color: red;
     }
 
+    /* แถว Main Topic + Description */
     .row-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 40px 40px 0 40px; /* ระยะห่างจากซ้าย-ขวา */
-      font-family: 'TH Sarabun New', sans-serif;
+      margin: 40px 40px 0 40px;   /* ระยะห่างซ้าย-ขวา */
       font-size: 24px;
     }
 
@@ -47,12 +38,14 @@
     .right-description {
       font-weight: bold;
     }
+
   </style>
 </head>
 <body>
 
 <h1 class="header-title">Diary Work Report</h1>
 
+<!-- แถวซ้าย-ขวา -->
 <div class="row-container">
   <div class="left-topic">Main Topic</div>
   <div class="right-description">Description</div>
@@ -60,4 +53,3 @@
 
 </body>
 </html>
-
