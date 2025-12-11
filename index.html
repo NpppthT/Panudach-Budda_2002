@@ -21,16 +21,18 @@
 <!-- ใช้ flex จัดตำแหน่งให้ Main อยู่ซ้าย และ Description อยู่กลาง -->
 <div style="
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* จัดให้เริ่มจากซ้าย */
   align-items: center;
-  margin-top: 20px;">
-  
+  margin-top: 20px;
+  width: 100%;
+  position: relative;
+">
+
   <!-- Main Topic -->
   <h2 style="
     font-family: 'TH Sarabun New', sans-serif;
     font-size: 20px;
     color: deepskyblue;
-    margin-right: auto;
     margin-left: 30px;">
     Main Topic
   </h2>
@@ -40,7 +42,10 @@
     font-family: 'TH Sarabun New', sans-serif;
     font-size: 20px;
     color: deepskyblue;
-    margin: 0 auto;">
+    position: absolute; /* ใช้ absolute เพื่อวางตามหน้าต่าง */
+    left: 50%; /* เริ่มจากกึ่งกลาง */
+    transform: translateX(-50%); /* เลื่อนกลับครึ่งความกว้างของตัวเอง */
+    margin: 0;">
     Description
   </h2>
 
